@@ -47,27 +47,50 @@
 			}
 
 			/* Universal styles for links and stuff */
-		
+			h1{
+				font-size: 55px;
+			}
+			
+			/* so all div calls are centered. I could just define it as div, but define a class to show 
+			that some of the divs are styled inline */
+			.align {
+				display: flex;
+				justify-content: center;
+			}
 
 			/* Responsive styles */
 	
 		</style>
 	</head>
+
+	<!-- email promoting a new pepsi flavor -->
 	<body id="body" style="margin: 0 !important; padding: 0 !important;">
 
 
-
+	  <!-- display: flex;  align-items: center; gap: 10px; -->
 	  <!-- Logo image -->
-
+	  <!-- using a placeholder pepsi logo -->>
+	   <div class="align">
+		<img width="400" height="400" src="https://images.squarespace-cdn.com/content/v1/52a1e3e4e4b055489471b02a/1457531232200-RY72DBC8Q6ZSOKROAWR7/Pepsi-logo.png",
+			 alt="Pepsi Logo"/>
+	   </div>
     
     
 		<!-- Headline -->
-		<h1>This is testing that the new site works</h1>
-    
+		<!-- heading talking about new flavors and wanted to only italicize the flavors -->>
+		<div style="display: flex; justify-content: center;">
+			<h1> Pepsi's Newest Flavors: </h1>
+			<h1 style="font-style: italic;"> &nbsp;Banana, Green Apple, </h1>
+			<h1> &nbsp;and </h1>
+			<h1 style="font-style: italic;"> &nbsp;Kiwi&emsp;</h1>
+		</div>
     
 		<!-- Hero Image -->
-
-    
+		<!-- wish the image was more cropped height wise but it will do for now -->
+		<div style="display: flex; justify-content: center;">
+			<img width="1100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjixr8aeeeu4bLRoJq_3WDa5wvWtmyByL7HxjA2Jd8eQunFIuba4LC7No&s=10",
+			 	alt="Pepsi Logo"/>
+		</div>
 
 		<!-- Body copy -->
 
@@ -79,7 +102,7 @@
     
 		<!-- Footer information: Always include an unsubscribe link! -->
 
-
+	   
 		
 
 	</body>
